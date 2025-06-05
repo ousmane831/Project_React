@@ -39,7 +39,7 @@ const OwnerList = ({ onEdit }) => {
       await deleteOwner(id);
       setOwners((prev) => prev.filter(owner => owner.id !== id));
     } catch {
-      alert('Erreur lors de la suppression.');
+      alert('Vous etes pas autoriser de faire cette action.');
     }
   };
 
